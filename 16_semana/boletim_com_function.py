@@ -26,4 +26,12 @@ for e in range(tamanho_turma):
     for i in range(quant_atividades):
         estudante_dic["notas"].append(float(input(f"Informe a {i+1}ª nota:")))
     lista_estudante.append(estudante_dic)
+
 print(lista_estudante)
+
+# CALCULANDO A MÉDIA DO ESTUDANTE
+# A VARIÁVEL estudante NO for É O DICIONÁRIO OU BOLETIM DE CADA UM
+for estudante in lista_estudante:
+    estudante["media"] = calcular_media_estudante(estudante)
+
+print(lista_estudante) 
